@@ -17,3 +17,16 @@ Splash::on_create_clicked()
     studio->show();
     deleteLater();
 }
+
+void
+Splash::on_open_clicked()
+{
+    QString file = QFileDialog::getOpenFileName(this, tr("Open project"), QString(), tr("Lums Project (*.lums-project)"));
+
+    if (file != "")
+    {
+        Studio* studio = Studio::open(file);
+        studio->show();
+        deleteLater();
+    }
+}

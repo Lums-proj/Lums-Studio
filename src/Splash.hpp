@@ -12,6 +12,7 @@ public:
 
 private slots:
     void    on_create_clicked();
+    void    on_open_clicked();
 };
 
 #endif

@@ -6,3 +6,4 @@ OBJECTS_DIR     = build/obj
 UI_DIR          = build/ui
 MOC_DIR         = build/moc
 DESTDIR         = bin
+ICON            = icon.icns
